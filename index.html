@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Qiaochu Wang's Personal Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+        <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  <!--important to nav-bar scroll-spy-->
+        <link href="css/home_page.css" rel="stylesheet" type="text/css">
+        
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+        <div class="container-fluid" style="background-color:#F44336;color:#fff;height:200px;overflow:hidden;position:relative; padding:0">            
+            <img src="files/images/dna-4.jpg" class="img-responsive" alt="DNA">
+        </div>
+
+        <nav class="navbar navbar-default" id="navbar" data-spy="affix" data-offset-top="197">
+            <div class ="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; color:white"><strong>QIAOCHU WANG</strong></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="navbar-nav nav navbar-right">
+                        <li class="active"><a href="#section1"><strong>About Me</strong></a></li>
+                        <li><a href="#section2"><strong>Portfolio</strong></a></li>
+                        <li><a href="#section3"><strong>My Research</strong></a></li>
+                        <li><a href="#section4"><strong>Contact</strong></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="sections">
+            <div id="section1" class="container">
+                <div style="margin-bottom: 30px;">
+                    <img src="files/images/IMG_0921-2.jpg" class="img-responsive img-circle col-xs-12 col-sm-3 col-md-3 col-lg-3" alt="avatar">
+                    <div class="text-left col-xs-12 col-sm-9 col-md-9 col-lg-9" style="padding-top: 30px">
+                        <p style="font-size:18px;text-align: left">Master of Science in Environmental Engineering, specializing in Bioremediation, Environmental Microbiology, instrumental analysis and wastewater treatment process/infrastructure design.</p>
+                        <hr id="s1">
+                        <p style="font-size:18px;text-align: left">Object-Oriented Programming, Algorithm Design, Web Development and Data Analysis.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="section2" class="container">
+                <h1>Portfolio</h1>
+                <hr id="s2">
+                <div class="col-xs-12 col-lg-6">
+                    <a href="https://codepen.io/MoonStar611/full/oWgdNx/" title="A random quote machine" style="text-decoration:none">
+                    <img src="files/images/Random_Quote_Machine.png" class="img-responsive thumbnail" alt="A random quote machine">
+                    <h5 style="text-align:center">A Random Quote Machine</h5>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <a href=# title="A random quote machine" style="text-decoration:none">
+                    <img src="files/images/Local_Weather_App.png" class="img-responsive thumbnail" alt="A local weather app">
+                    <h5 style="text-align:center">A Local Weather App</h5>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                <a href="https://codepen.io/MoonStar611/full/wdayeb/" title="Wikipedia viewer" style="text-decoration:none">
+                    <img src="files/images/Wikipedia_Viewer.png" class="img-responsive thumbnail" alt="A wikipedia viewer app">
+                    <h5 style="text-align:center">A Wikepedia Viewer App</h5>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-lg-6">placeholder</div>
+                <div class="col-xs-12 col-lg-6">placeholder</div>
+                <div class="col-xs-12 col-lg-6">placeholder</div>
+            </div>
+            <div id="section3" class="container">
+                <h1>My Research</h1>
+                <hr id="s3">
+                <p>placeholder</p>
+                <p>placeholder</p>
+            </div>
+            <div id="section4" class="container">
+                <h1>Contact Me</h1>
+                <hr id="s4">
+                <div class="col-xs-12 col-lg-4 col-md-6"><!--below is the contact form-->
+                    <h3>Leave Message</h3>
+                    <form action="mailto:chester.q.wang@gmail.com">
+                        <div class="input-group ">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" id="name" class="form-control" name="name" placeholder="Your Name" required>      
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input type="text" id="email" class="form-control" name="email" placeholder="Email" required>     
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-file"></i></span>
+                            <textarea id="message" class="form-control" rows="14" name="message" placeholder="Leave Your Message" required></textarea>
+                        </div>
+                        <div class="input-group col-xs-12 col-lg-12 col-md-12">
+                            <button type="submit" class="btn btn-block btn-info">Submit</button>
+                        </div>
+                    </form>
+                </div><!--above is the contact form-->
+                <div class="col-xs-12 col-lg-8 col-md-6">
+                    <h3>Your Location</h3>
+                    <div id="map"></div>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtyEBydnsFZv6bPY4wGFN4ZBQcxdLmFgk&language=en&callback=myMap"></script><!--Google map API-->
+                    <script src="js/home_page.js"></script>
+                    
+                    <!--<script>
+                        function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(52, 0),
+        zoom: 12,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    };
+    
+    var googleMap = new google.maps.Map(document.getElementById("map"), mapOptions);
+    var infoWindow = new google.maps.InfoWindow({map: googleMap});
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            var pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            };
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('You Are Here');
+            googleMap.setCenter(pos);
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(pos.lat, pos.lng),
+            });
+            marker.setMap(googleMap);
+        }, function (err) {
+            window.alert(err.message);
+            handleLocationError(true, infoWindow, googleMap.getCenter());
+        });
+    } else {
+        handleLocationError(false, infoWindow, googleMap.getCenter());
+    }
+}
+
+function handleLocationError(hasGeoLocation, infoWindow, pos) {
+    infoWindow.setPosition(pos);
+    infoWindow.setContent(hasGeoLocation ? 'Error: The Geolocation service failed.' : 'Error: Your browser doesn\'t support geolocation.');
+}
+                    </script>-->
+                </div>
+
+
+            </div>
+        </div>
+        <footer>
+            <div id="footer1">
+                <h4>Follow Me:</h4>
+                <a href="https://twitter.com/QiaochuW?lang=en" title="My Twitter" target="_blank"><img alt="twitter" src="files/glyphicons-social/png/glyphicons-social-32-twitter.png"></a>
+                <a href="https://www.facebook.com/Chester.Qiaochu.Wang" title="My Facebook" target="_blank"><img alt="twitter" src="files/glyphicons-social/png/glyphicons-social-31-facebook.png"></a>
+                <a href="https://github.com/Moonstar611" target="_blank" title="My GitHub"><img alt="twitter" src="files/glyphicons-social/png/glyphicons-social-22-github.png"></a>
+                <a href="https://www.linkedin.com/in/qiaochuwang/" target="_blank" title="My LinkedIn"><img alt="twitter" src="files/glyphicons-social/png/glyphicons-social-18-linked-in.png"></a>
+            </div>
+        <div id="footer2">
+            <h4>Created by <strong><a href="#" style="text-decoration: none">QIAOCHU WANG</a></strong></h4>
+        </div>
+    </footer>
+
+</body>
+</html>
