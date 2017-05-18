@@ -16,14 +16,14 @@ and open the template in the editor.
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  <!--important to nav-bar scroll-spy-->
-        <link href="css/home_page.css" rel="stylesheet" type="text/css">
+        <link href="/h_p/css/home_page.css" rel="stylesheet" type="text/css">
         
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
         <div class="container-fluid" style="background-color:#F44336;color:#fff;height:200px;overflow:hidden;position:relative; padding:0">            
-            <img src="files/images/dna-4.jpg" class="img-responsive" alt="DNA">
+            <img src="/h_p/files/images/dna-4.jpg" class="img-responsive" alt="DNA">
         </div>
 
         <nav class="navbar navbar-default" id="navbar" data-spy="affix" data-offset-top="197">
@@ -49,7 +49,7 @@ and open the template in the editor.
         <div id="sections">
             <div id="section1" class="container">
                 <div style="margin-bottom: 30px;">
-                    <img src="files/images/IMG_0921-2.jpg" class="img-responsive img-circle col-xs-12 col-sm-3 col-md-3 col-lg-3" alt="avatar">
+                    <img src="/h_p/files/images/IMG_0921-2.jpg" class="img-responsive img-circle col-xs-12 col-sm-3 col-md-3 col-lg-3" alt="avatar">
                     <div class="text-left col-xs-12 col-sm-9 col-md-9 col-lg-9" style="padding-top: 30px">
                         <p style="font-size:18px;text-align: left">Master of Science in Environmental Engineering, specializing in Bioremediation, Environmental Microbiology, instrumental analysis and wastewater treatment process/infrastructure design.</p>
                         <hr id="s1">
@@ -61,24 +61,36 @@ and open the template in the editor.
                 <h1>Portfolio</h1>
                 <hr id="s2">
                 <div class="col-xs-12 col-lg-6">
-                    <a href="https://codepen.io/MoonStar611/full/oWgdNx/" title="A random quote machine" style="text-decoration:none">
-                    <img src="files/images/Random_Quote_Machine.png" class="img-responsive thumbnail" alt="A random quote machine">
+                    <a href="/simon_game" title="Simon Game" style="text-decoration:none">
+                    <img src="/h_p/files/images/Simon_Game.png" class="img-responsive thumbnail" alt="A simon game">
+                    <h5 style="text-align:center">A Pomodoro Clock App</h5>
+                    </a>
+                    </div>
+                <div class="col-xs-12 col-lg-6">
+                    <a href="/random_quote" title="A random quote machine" style="text-decoration:none">
+                    <img src="/h_p/files/images/Random_Quote_Machine.png" class="img-responsive thumbnail" alt="A random quote machine">
                     <h5 style="text-align:center">A Random Quote Machine</h5>
                     </a>
                 </div>
                 <div class="col-xs-12 col-lg-6">
-                    <a href=# title="A random quote machine" style="text-decoration:none">
-                    <img src="files/images/Local_Weather_App.png" class="img-responsive thumbnail" alt="A local weather app">
-                    <h5 style="text-align:center">A Local Weather App</h5>
+                <a href="/pomodoro_clock" title="Pomodoro Clock" style="text-decoration:none">
+                    <img src="/h_p/files/images/Pomodoro_Clock.png" class="img-responsive thumbnail" alt="A pomodoro clock app">
+                    <h5 style="text-align:center">A Pomodoro Clock App</h5>
                     </a>
                 </div>
+                <!--<div class="col-xs-12 col-lg-6">
+                    <a href="/local_weather" title="A local weather app" style="text-decoration:none">
+                    <img src="/h_p/files/images/Local_Weather_App.png" class="img-responsive thumbnail" alt="A local weather app">
+                    <h5 style="text-align:center">A Local Weather App</h5>
+                    </a>
+                </div>-->
                 <div class="col-xs-12 col-lg-6">
-                <a href="https://codepen.io/MoonStar611/full/wdayeb/" title="Wikipedia viewer" style="text-decoration:none">
-                    <img src="files/images/Wikipedia_Viewer.png" class="img-responsive thumbnail" alt="A wikipedia viewer app">
+                <a href="/wiki_viewer" title="Wikipedia viewer" style="text-decoration:none">
+                    <img src="/h_p/files/images/Wikipedia_Viewer.png" class="img-responsive thumbnail" alt="A wikipedia viewer app">
                     <h5 style="text-align:center">A Wikepedia Viewer App</h5>
                     </a>
                 </div>
-                <div class="col-xs-12 col-lg-6">placeholder</div>
+                
                 <div class="col-xs-12 col-lg-6">placeholder</div>
                 <div class="col-xs-12 col-lg-6">placeholder</div>
             </div>
@@ -115,9 +127,9 @@ and open the template in the editor.
                     <h3>Your Location</h3>
                     <div id="map"></div>
                     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtyEBydnsFZv6bPY4wGFN4ZBQcxdLmFgk&language=en&callback=myMap"></script><!--Google map API-->
-                    <script src="js/home_page.js"></script>
+                    <!--<script src="/h_p/js/home_page.js"></script>-->
                     
-                    <!--<script>
+                    <script>
                         function myMap() {
     var mapOptions = {
         center: new google.maps.LatLng(52, 0),
@@ -153,7 +165,7 @@ function handleLocationError(hasGeoLocation, infoWindow, pos) {
     infoWindow.setPosition(pos);
     infoWindow.setContent(hasGeoLocation ? 'Error: The Geolocation service failed.' : 'Error: Your browser doesn\'t support geolocation.');
 }
-                    </script>-->
+                    </script>
                 </div>
 
 
@@ -162,13 +174,13 @@ function handleLocationError(hasGeoLocation, infoWindow, pos) {
         <footer>
             <div id="footer1">
                 <h4>Follow Me:</h4>
-                <a href="https://twitter.com/QiaochuW?lang=en" title="My Twitter" target="_blank"><img alt="twitter" src="files/glyphicons-social/png/glyphicons-social-32-twitter.png"></a>
-                <a href="https://www.facebook.com/Chester.Qiaochu.Wang" title="My Facebook" target="_blank"><img alt="twitter" src="files/glyphicons-social/png/glyphicons-social-31-facebook.png"></a>
-                <a href="https://github.com/Moonstar611" target="_blank" title="My GitHub"><img alt="twitter" src="files/glyphicons-social/png/glyphicons-social-22-github.png"></a>
-                <a href="https://www.linkedin.com/in/qiaochuwang/" target="_blank" title="My LinkedIn"><img alt="twitter" src="files/glyphicons-social/png/glyphicons-social-18-linked-in.png"></a>
+                <a href="https://twitter.com/QiaochuW?lang=en" title="My Twitter" target="_blank"><img alt="twitter" src="/h_p/files/glyphicons-social/png/glyphicons-social-32-twitter.png"></a>
+                <a href="https://www.facebook.com/Chester.Qiaochu.Wang" title="My Facebook" target="_blank"><img alt="twitter" src="/h_p/files/glyphicons-social/png/glyphicons-social-31-facebook.png"></a>
+                <a href="https://github.com/Moonstar611" target="_blank" title="My GitHub"><img alt="twitter" src="/h_p/files/glyphicons-social/png/glyphicons-social-22-github.png"></a>
+                <a href="https://www.linkedin.com/in/qiaochuwang/" target="_blank" title="My LinkedIn"><img alt="twitter" src="/h_p/files/glyphicons-social/png/glyphicons-social-18-linked-in.png"></a>
             </div>
         <div id="footer2">
-            <h4>Created by <strong><a href="#" style="text-decoration: none">QIAOCHU WANG</a></strong></h4>
+            <h4>Created by <strong><a href="/home" style="text-decoration: none">QIAOCHU WANG</a></strong></h4>
         </div>
     </footer>
 
